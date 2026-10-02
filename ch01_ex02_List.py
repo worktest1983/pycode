@@ -25,15 +25,18 @@ pot = ["草蛉蟲", "雙角獸角粉末", "節肢動物的眼睛", "河童的鱗
 
 # 移除最後一個元素
 pot.pop(3)
+print(pot)
 
 # 最前面插入催狂魔的眼淚
 pot.insert(0, '催狂魔的眼淚')
+print(pot)
 
 # 雙角獸角粉末替換獨角獸的毛
 pot[2] = "獨角獸的毛"
+print(pot)
 
-# 反轉串列
+# 反轉
 pot.reverse()
 
 
-print(pot)
+print('最後的大釜清單:', pot)

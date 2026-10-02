@@ -23,19 +23,19 @@ scanList = ["李四", "王五", "神祕外星人X", "趙六", "李四"]
 # 用Set去除重複的
 new_captain = set(captain)
 new_scanList = set(scanList)
-print(new_captain)
-print(new_scanList)
+print(f'乾淨的隊長白名單集合: {new_captain}')
+print(f'乾淨的紅外線掃描集合: {new_scanList}')
+print('-' * 40)
 
 
 # 計算交集
-list_01 = new_captain &  new_scanList
-print(f'用運算子 & 得到的結果 : {list_01}')
+both = new_captain &  new_scanList
+# both = new_captain.intersection(new_scanList)
+print(f'同時出現的人員(交集): {both}')
+print('-' * 40)
 
-list_02 = new_captain.intersection(new_scanList)
-print(f'intersection 得到的結果 : {list_02}')
 
 # 計算差集
-list_03 = new_scanList - new_captain
-print(f'用運算子 - 得到的結果 : {list_03}')
-list_04 = new_scanList.difference(new_captain)
-print(f'difference 得到的結果 : {list_04}')
+# spy = new_scanList - new_captain
+spy = new_scanList.difference(new_captain)
+print(f'偷偷溜進基地的是(差集) : {spy}')
